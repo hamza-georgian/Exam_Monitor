@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QSTSS Exam Monitor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="QSTSS Logo" class="logo" />
+    <div class="header-center">
+      <select id="timerSelect">
+        <option value="0">Set Countdown</option>
+        <option value="5">5 minutes</option>
+        <option value="10">10 minutes</option>
+        <option value="15">15 minutes</option>
+        <option value="30">30 minutes</option>
+        <option value="60">1 hour</option>
+        <option value="90">1 hour 30 minutes</option>
+        <option value="120">2 hours</option>
+      </select>
+      <div id="countdown"></div>
+    </div>
+    <img src="logo_moehe.png" alt="MOEHE Logo" class="logo moehe" />
+  </header>
+
+  <main>
+    <div class="labels">
+      <div><strong style="color: red">Date:</strong> <span id="currentDate"></span></div>
+      <div><strong style="color: red">Subject:</strong>
+        <select id="subjectSelect">
+          <option value="STEM">STEM</option>
+          <option value="English">English</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Social Studies">Social Studies</option>
+          <option value="Islamic Studies">Islamic Studies</option>
+          <option value="Arabic">Arabic</option>
+          <option value="Math">Math</option>
+        </select>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th># of warnings<br />عدد التنبيهات</th>
+          <th>Name of Student Violating the instructions<br />أسماء الطلاب المخالفين للتعليمات</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td contenteditable></td><td contenteditable></td></tr>
+        <tr><td contenteditable></td><td contenteditable></td></tr>
+      </tbody>
+    </table>
+
+    <div class="instructions">
+      <h2>Test Instructions:</h2>
+      <ol>
+        <li>Write with a <span class="highlight">dry blue pen only</span>, and in a sound and clear font.</li>
+        <li>Make sure you are sitting in the correct seat according to the seating chart.</li>
+        <li class="red">Be sure to write your full name, clearly and legibly.</li>
+        <li>Read the test instructions and make sure the number of papers and questions has no issues.</li>
+        <li class="red">Questions to the invigilators are not allowed during the test.</li>
+        <li>It is forbidden to go out to the toilet (except for necessity).</li>
+      </ol>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

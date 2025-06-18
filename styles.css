@@ -1,0 +1,91 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.logo {
+  height: 80px;
+}
+
+.header-center {
+  text-align: center;
+}
+
+#timerSelect {
+  font-size: 16px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#countdown {
+  font-size: 98px;
+  font-weight: bold;
+  color: red;
+}
+
+.labels {
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+}
+
+.labels select {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  background: #eef5f1;
+}
+
+.instructions {
+  width: 90%;
+  margin: 0 auto 40px;
+}
+
+.instructions h2 {
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.instructions li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.highlight {
+  background-color: cyan;
+  font-weight: bold;
+}
